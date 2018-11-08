@@ -1,0 +1,24 @@
+button {
+    font-weight: 900;
+    background: transparent;
+    border: solid 1px;
+}
+#score {
+    font-weight: bold;
+}
+
+.row div {
+    width: 200px;
+}
+
+.current-tries {
+
+}
+
+.best {
+    text-align: center;
+}
+
+.restart {
+    float: right;
+}

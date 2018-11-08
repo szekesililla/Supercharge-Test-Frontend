@@ -1,6 +1,7 @@
 <app-menu></app-menu>
+<app-score [countGuess] = "countGuess"></app-score>
 <div class="container">
-    <div class="row justify-content-center ">
+    <div class="row justify-content-center container-fluid ">
         <div *ngFor="let i of nSizedArray(numOfCards)"
              class="col-4 col-sm-3 col-md-2 col-lg-1 col-xl-1 card d-flex justify-content-center align-items-center"
              (click)="flipCard(i)">
