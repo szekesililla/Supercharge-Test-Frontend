@@ -1,4 +1,7 @@
-html, body {
+body {
+    background-repeat: no-repeat;
     background-color: #f2f2f2;
-    background: url("/src/app/supercharge-logo.svg");
+    background-image: url(/src/app/supercharge-logo.svg);
+    background-size: 80%;
+    background-position: center top;
 }
