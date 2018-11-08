@@ -1,9 +1,12 @@
 <app-menu></app-menu>
 <div class="container">
     <div class="row justify-content-center ">
-        <div *ngFor="let i of nSizedArray(10)"
-             class="col-4 col-sm-3 col-md-2 col-lg-1 col-xl-1 card d-flex justify-content-center align-items-center">
-            <img [src]=cards[i] alt="" (click)="flipCard(cards[i])">
+        <div *ngFor="let i of nSizedArray(numOfCards)"
+             class="col-4 col-sm-3 col-md-2 col-lg-1 col-xl-1 card d-flex justify-content-center align-items-center"
+             (click)="flipCard(i)">
+            <img [src]=cards[i][1]
+                 alt=""
+                 [ngStyle]="{'visibility': cards[i][2] ? 'hidden' : 'visible'}">
         </div>
     </div>
 </div>
